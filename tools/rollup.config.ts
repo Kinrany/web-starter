@@ -1,7 +1,10 @@
 import path from 'path';
-import { RollupOptions, OutputOptions } from 'rollup';
+import { OutputOptions, RollupOptions } from 'rollup';
+import commonjs from 'rollup-plugin-commonjs';
 import htmlEntry from 'rollup-plugin-html-entry';
+import nodeResolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript';
+import vue from 'rollup-plugin-vue';
 
 export const inputOptions: RollupOptions = {
   input: [
@@ -9,7 +12,10 @@ export const inputOptions: RollupOptions = {
   ],
   plugins: [
     htmlEntry(),
+    vue(),
     typescript(),
+    nodeResolve(),
+    commonjs(),
   ],
 };
 
