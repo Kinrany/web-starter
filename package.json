@@ -3,7 +3,7 @@
   "private": true,
   "description": "Starter kit for building web apps with Rollup, Typescript, and Vue.",
   "scripts": {
-    "build": "ts-node ./tools/build.ts -P ./tsconfig.json"
+    "build": "ts-node --project ./tools/tsconfig.json ./tools/build.ts"
   },
   "repository": {
     "type": "git",
