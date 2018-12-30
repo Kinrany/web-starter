@@ -1,0 +1,26 @@
+{
+  "name": "web-starter",
+  "private": true,
+  "description": "Starter kit for building web apps with Rollup, Typescript, and Vue.",
+  "scripts": {
+    "build": "ts-node ./tools/build.ts -P ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kinrany/web-starter.git"
+  },
+  "keywords": [
+    "rollup",
+    "typescript",
+    "vue",
+    "boilerplate"
+  ],
+  "author": "kinrany",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2",
+    "vue": "^2.5.21"
+  }
+}
