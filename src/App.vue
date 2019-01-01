@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-unscoped">
     Hello world!
   </div>
 </template>
@@ -12,7 +12,7 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-#id {
+#app-unscoped {
   background-color: lightgreen;
 }
 </style>
