@@ -4,6 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript';
 import vue from 'rollup-plugin-vue';
+import replace from 'rollup-plugin-replace';
 
 export const inputDir = path.resolve(__dirname, '../src');
 export const outputDir = path.resolve(__dirname, '../dist');
@@ -15,6 +16,9 @@ export const inputOptions: RollupOptions = {
     typescript(),
     nodeResolve(),
     commonjs(),
+    replace({
+      'process.env.NODE_ENV': '"production"',
+    }),
   ],
 };
 
