@@ -2,23 +2,17 @@
   <div id="root">
     <h3>Hello world!</h3>
     <div>
-      <button v-on={click}>{{clicks}}</button>
+      <counter/>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
+import counter from './Counter.vue';
 export default Vue.extend({
-  data() {
-    return {
-      clicks: 0,
-    };
-  },
-  methods: {
-    click() {
-      this.clicks += 1;
-    },
+  components: {
+    counter,
   },
 })
 </script>
